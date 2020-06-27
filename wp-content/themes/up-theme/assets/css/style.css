@@ -76,13 +76,14 @@ img {
 /* main theme */
 /* header */
 header {
-  background: #444753;
+  /*background: #444753;*/
   position: fixed;
   z-index: 9999;
   top: 0;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  /*box-shadow: 0 3px 3px rgba(0,0,0,0.05);*/
   width: 100%;
-  padding: 5px 0;
+  /*padding:5px 0;*/
+  padding: 25px 0;
 }
 header img {
   height: 65px;
@@ -205,6 +206,44 @@ header .fa-times {
 }
 
 /* Home template */
+/* slick slider */
+#intro-slider {
+  height: 100vh;
+  overflow: hidden;
+}
+#intro-slider .slick-prev, #intro-slider .slick-next {
+  width: auto;
+  height: auto;
+  z-index: 5;
+  height: 100vh;
+  top: 50vh;
+}
+#intro-slider .slick-prev:before, #intro-slider .slick-next:before {
+  font-family: FontAwesome;
+  font-size: 34px;
+  color: #fff;
+}
+#intro-slider .slick-prev:hover:before, #intro-slider .slick-prev:focus:before, #intro-slider .slick-next:hover:before, #intro-slider .slick-next:focus:before {
+  color: #ff0022;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+#intro-slider .slick-next {
+  right: 60px !important;
+}
+#intro-slider .slick-next:before {
+  content: "";
+}
+#intro-slider .slick-prev {
+  left: 60px !important;
+}
+#intro-slider .slick-prev:before {
+  content: "";
+}
+
 /* About Template */
 /*  portfolio template */
 /* Contact template */

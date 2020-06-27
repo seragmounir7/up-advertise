@@ -31,7 +31,7 @@
     }
 
 /* all selectors */
-* {
+*{
     margin:0;
     padding:0;
     @include prefixes(box-sizing,border-box)
@@ -63,15 +63,20 @@ img{
     #{$property}:#ff0022
 }
 
+@mixin second-color($property){
+    #{property}:#444756
+}
+
 /* header */
 header {
-    background: #444753;
+    /*background: #444753;*/
     position: fixed;
     z-index: 9999;
     top: 0;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.05);
+    /*box-shadow: 0 3px 3px rgba(0,0,0,0.05);*/
     width:100%;
-    padding:5px 0;
+    /*padding:5px 0;*/
+    padding:25px 0;
     img {
         height:65px
     }
@@ -181,6 +186,50 @@ header {
 }
 
 /* Home template */
+    /* slick slider */
+    #intro-slider {
+
+        height:100vh;
+        overflow: hidden;
+        
+        .slick-prev, .slick-next {
+            width:auto;
+            height:auto;
+            z-index:5;
+            height: 100vh;
+            top: 50vh;
+
+            &:before {
+                font-family: FontAwesome;
+                font-size: 34px;
+                color:#fff;
+            }
+
+            &:hover, &:focus {
+                &:before {
+                    @include main-color(color);
+                    @include prefixes(transition,300ms );  
+                }
+
+            }
+        }
+
+        .slick-next {
+            right:60px!important;
+
+            &:before {
+                content:'\f054';
+            }
+        }
+        
+        .slick-prev {
+            left:60px!important;
+
+            &:before {
+                content:'\f053';
+            }
+        }
+    }
 
 /* About Template */
 

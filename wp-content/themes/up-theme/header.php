@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>u-advertise</title>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style.css?ver=1.1">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/slick.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
