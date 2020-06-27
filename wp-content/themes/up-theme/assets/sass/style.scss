@@ -1,3 +1,71 @@
-body {
-    color:#444
+/* temp */
+#wpadminbar {display: none;}
+
+/* main fuctions and main variables */
+    @mixin prefixes($property,$value){
+        #{-webkit- + $property}:$value;
+        #{-moz- + $property}:$value;
+        #{-ms- + $property}:$value;
+        #{-o- + $property}:$value;
+        #{$property}:$value;
+    }
+    /* flex box styling */
+    .display-flex {
+        @include prefixes(display,flex);
+    }
+
+    .justify-content-center {
+        @include prefixes(justify-content,center);
+    }
+
+    .justify-content-space-between {
+        @include prefixes(justify-content,space-between);
+    }
+
+    .align-items-center {
+        @include prefixes(align-items, center )
+    }
+
+/* all selectors */
+* {
+    margin:0;
+    padding:0;
+    @include prefixes(box-sizing,border-box)
 }
+
+/*container*/
+.container {
+    max-width: 95%;
+    margin:0 auto
+}
+
+@media (min-width:1200px){
+    .container {
+        max-width:1140px
+    }
+}
+
+/* main theme */
+@mixin main-color($property){
+    #{$property}:#ff0022
+}
+
+/* header */
+header {
+    background: #444753;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.05);
+    width:100%
+}
+
+/* Home template */
+
+/* About Template */
+
+/*  portfolio template */
+
+/* Contact template */
+
+/* footer */

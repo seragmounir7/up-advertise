@@ -1,5 +1,79 @@
-body {
-  color: #444;
+/* temp */
+#wpadminbar {
+  display: none;
 }
+
+/* main fuctions and main variables */
+/* flex box styling */
+.display-flex {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+
+.justify-content-center {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.align-items-center {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+/* all selectors */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*container*/
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* main theme */
+/* header */
+header {
+  background: #444753;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+/* Home template */
+/* About Template */
+/*  portfolio template */
+/* Contact template */
+/* footer */
 
 /*# sourceMappingURL=style.css.map */
