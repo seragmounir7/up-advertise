@@ -15,7 +15,7 @@
     <header>
         <div class="container">
             <div class="display-flex justify-content-space-between align-items-center">
-                <a href="#">
+                <a href="<?php echo home_url(); ?>">
                     <img src="<?php bloginfo('template_directory'); ?>/assets/img/logo.png" alt="">
                 </a>
                 <div id="responsive-navbar">
